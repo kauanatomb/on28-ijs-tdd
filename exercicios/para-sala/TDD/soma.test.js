@@ -1,4 +1,4 @@
-// 6
+//6
 
 const sum = require('./soma')
 
@@ -8,4 +8,11 @@ describe("sum two numbers", () => {
 
     expect(sum(2, 3)).toEqual(5);
    })
+});
+
+describe("sum two equal numbers", () => {
+  it('sum of 2 and 2 = 12', () => {
+
+   expect(sum(2, 2)).toEqual(12);
+  })
 });

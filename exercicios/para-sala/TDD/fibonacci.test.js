@@ -1,10 +1,11 @@
 // 8
 
-const fibonacciSeq = require('./fibonacci')
-describe("Fibonacci function", () => {
-    test("Check Fibonacci", () => {
-        const output = [8, 13, 21, 34, 55, 89, 144]
+const fibonacciSeq = require('./fibonacci');
 
-        expect(fibonacciSeq(6, 7)).toEqual(output);
-    });
+describe("Fibonacci function", () => {
+  test("Check Fibonacci sequence", () => {
+    const output = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
+    
+    expect(fibonacciSeq(13)).toEqual(output);
+  });
 });
